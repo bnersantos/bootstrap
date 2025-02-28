@@ -42,43 +42,46 @@
     </div>
 </nav>
 
-<!-- Container com metade texto e metade imagem -->
-<div class="container-fluid col-12  row">
-    <div class="text-start col-6 m-4">
-        <h1>Bem-vindo a +Sports</h1>
-        <p>O esporte é a forma de lazer mais saudável que existe. Seja para competição ou diversão, a prática de
-            esportes une pessoas diferentes não importando a classe social ou o idioma. Os esportes são normalmente
-            geridos por um conjunto de regras ou costumes. Eventos físicos, tais como marcar gols, fazer o ponto ou
-            cruzar uma linha em primeiro, muitas vezes definem o resultado de uma modalidade. No entanto, o grau de
-            habilidade e desempenho em alguns esportes, como a ginástica e a patinação artística são julgadas de acordo
-            com critérios bem definidos. Pratique atividades físicas e obtenha melhor desempenho com equipamentos de
-            qualidade na +Sports.</p>
+  <form class="row g-3 m-3 needs-validation min-vh-100" novalidate>
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label text-white">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
     </div>
-    <div class="image col-5 justify-content-end mt-5 me-5">
-        <img src="loja.jpg" width="500px" height="250px" alt="Exemplo de imagem">
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label text-white">Senha</label>
+      <input type="password" class="form-control" id="inputPassword4">
     </div>
-</div>
-
-<!-- Container com 3 cards -->
-<div class="cards row justify-content-between m-5 align-items-center">
-    <h2 class="text-center">Encontre seu esporte</h2>
-    <div class="card col-3 align-items-center  p-4">
-
-        <img src="trilha.jpg" width="150px" height="100px" alt="Imagem do Card 1 " class="img-thumbnail">
-        <h3>Trilha</h3>
-        <p class="text-center">Montanha, Camping & Trilha.</p>
+    <div class="col-md-6">
+      <label for="inputAddress" class="form-label text-white">Endereço</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Rua:...">
     </div>
-    <div class="card col-3 align-items-center p-1 img-thumbnail">
-        <img src="fitness.jpg" width="150px" height="100px" alt="Imagem do Card 2" class="img-thumbnail">
-        <h3>Fitness e Musculação</h3>
-        <p class="text-center">Treino cardio|Musculação|Funcional<br>Cross training|Pilates|Yoga</p>
+    <div class="col-md-6">
+      <label for="inputAddress2" class="form-label text-white">Complemento</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, ...">
     </div>
-    <div class="card col-3 align-items-center p-1 img-thumbnail">
-        <img src="corrida.jpg" width="150px" height="100px" alt="Imagem do Card 3" class="img-thumbnail">
-        <h3>Corrida e Caminhada</h3>
-        <p class="text-center">Corrida|Performance<br> Trail Running|Caminhada</p>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label text-white">Cidade</label>
+      <input type="text" class="form-control" id="inputCity">
     </div>
-</div>
+    <div class="col-md-6">
+      <label for="inputState" class="form-control">Estado</label>
+      <select id="inputState" class="form-select">
+        <option selected>SP</option>
+        <option selected>RJ</option>
+        <option selected>ES</option>
+        <option selected>MG</option>
+        <option selected>GO</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="inputZip" class="form-label">CEP</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <br>
+    <div class="col-md-6">
+      <button class="btn-success">Enviar</button>
+    </div>
+  </form>
 
 <!-- Rodapé -->
 <footer class="bg-danger p-2 text-center text-black">
