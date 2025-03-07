@@ -42,46 +42,49 @@
     </div>
 </nav>
 
-  <form class="row g-3 m-3 needs-validation min-vh-100" novalidate>
-    <div class="col-md-6">
-      <label for="inputEmail4" class="form-label text-white">Email</label>
-      <input type="email" class="form-control" id="inputEmail4">
-    </div>
-    <div class="col-md-6">
-      <label for="inputPassword4" class="form-label text-white">Senha</label>
-      <input type="password" class="form-control" id="inputPassword4">
-    </div>
-    <div class="col-md-6">
-      <label for="inputAddress" class="form-label text-white">Endereço</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="Rua:...">
-    </div>
-    <div class="col-md-6">
-      <label for="inputAddress2" class="form-label text-white">Complemento</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, ...">
-    </div>
-    <div class="col-md-6">
-      <label for="inputCity" class="form-label text-white">Cidade</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="col-md-6">
-      <label for="inputState" class="form-control">Estado</label>
-      <select id="inputState" class="form-select">
-        <option selected>SP</option>
-        <option selected>RJ</option>
-        <option selected>ES</option>
-        <option selected>MG</option>
-        <option selected>GO</option>
-      </select>
-    </div>
-    <div class="col-md-6">
-      <label for="inputZip" class="form-label">CEP</label>
-      <input type="text" class="form-control" id="inputZip">
-    </div>
+    <form class="row g-3 m-3 needs-validation min-vh-100" novalidate>
+        <div class="col-md-6">
+            <label for="inputEmail4" class="form-label" id="labelEmail4" onmousedown="testLabel('inputEmail4','Email')">Email</label>
+            <input  type="email" class="form-control" id="inputEmail4" onmousedown="colorLabel('labelEmail4')" onfocusout="colorLabelOut('labelEmail4')">
+        </div>
+        <div class="col-md-6">
+            <label for="inputPassword4" class="form-label" id="labelPassword" onmousedown="testLabel('inputPassword','Senha')">Senha</label>
+            <input type="password" class="form-control" id="inputPassword4" onmousedown="colorLabel('labelPassword4')" onfocusout="colorLabelOut('labelPassword4')">
+        </div>
+        <div class="col-md-6">
+            <label for="inputAddress" class="form-label" id="labelAddress" onmousedown="testLabel('inputAddress','Endereço')">Endereço</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="Rua:..." onmousedown="colorLabel('labelAddress')" onfocusout="colorLabelOut('labelAddress')">
+        </div>
+        <div class="col-md-6">
+            <label for="inputAddress2" class="form-label" id="labelAddress2" onmousedown="testLabel('inputAddress2','Complemento')">Complemento</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, casa, ..." onmousedown="colorLabel('labelAddress2')" onfocusout="colorLabelOut('labelAddress2')">
+        </div>
+        <div class="col-md-6">
+            <label for="inputCity" class="form-label" id="labelCity" onmousedown="testLabel('inputCity','Cidade')">Cidade</label>
+            <input type="text" class="form-control" id="inputCity" onmousedown="colorLabel('labelCity')" onfocusout="colorLabelOut('labelCity')">
+        </div>
+        <div class="col-md-6">
+            <label for="inputState" class="form-control" id="labelState">Estado</label>
+            <select id="inputState" class="form-select" onmousedown="colorLabel('labelState')">
+                <option selected>SP</option>
+                <option selected>RJ</option>
+                <option selected>ES</option>
+                <option selected>MG</option>
+                <option selected>GO</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputZip" class="form-label" id="labelZip" onmousedown="testLabel('inputZip','CEP')">CEP</label>
+            <input type="text" class="form-control" id="inputZip" onmousedown="colorLabel('labelZip')" onfocusout="colorLabelOut('labelZip')">
+        </div>
     <br>
-    <div class="col-md-6">
-      <button class="btn-success">Enviar</button>
-    </div>
-  </form>
+        <div class="col-md-6">
+            <button class="btn-success bg-black btn text-white">Enviar</button>
+            <div class="bg-black text-white btn limpar">
+                <a class="bg-black text-white" id="button" onmousedown="testButton()">Limpar</a>
+            </div>
+        </div>
+    </form>
 
 <!-- Rodapé -->
 <footer class="bg-danger p-2 text-center text-black">
@@ -89,7 +92,7 @@
     <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
 </footer>
 </div>
-
+<script src="exemplo.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3
 lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
